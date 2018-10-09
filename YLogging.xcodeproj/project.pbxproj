@@ -10,6 +10,7 @@
 		18A9C673216C920200880FDA /* YLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A9C669216C920200880FDA /* YLogging.framework */; };
 		18A9C678216C920200880FDA /* YLoggingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9C677216C920200880FDA /* YLoggingTests.swift */; };
 		18A9C67A216C920200880FDA /* YLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A9C66C216C920200880FDA /* YLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18A9C684216C934900880FDA /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9C683216C934900880FDA /* Logging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		18A9C672216C920200880FDA /* YLoggingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLoggingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A9C677216C920200880FDA /* YLoggingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLoggingTests.swift; sourceTree = "<group>"; };
 		18A9C679216C920200880FDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A9C683216C934900880FDA /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				18A9C66C216C920200880FDA /* YLogging.h */,
 				18A9C66D216C920200880FDA /* Info.plist */,
+				18A9C683216C934900880FDA /* Logging.swift */,
 			);
 			path = YLogging;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					18A9C668216C920200880FDA = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					18A9C671216C920200880FDA = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A9C684216C934900880FDA /* Logging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		18A9C67E216C920200880FDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tobeprecise.test.YLogging;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		18A9C67F216C920200880FDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +399,7 @@
 		18A9C681216C920200880FDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 356S5JR8A3;
 				INFOPLIST_FILE = YLoggingTests/Info.plist;
@@ -409,6 +418,7 @@
 		18A9C682216C920200880FDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 356S5JR8A3;
 				INFOPLIST_FILE = YLoggingTests/Info.plist;
